@@ -21,9 +21,172 @@
   <div class="relative h-screen">
 
     <!-- .contanier start -->
-    <div class="container mx-auto flex justify-center gap-5 py-9">
+    <div class="container mx-auto flex justify-center gap-5 py-9 grid grid-rows-2 grid-flow-col gap-4">
 
-      <!-- table -->
+      <div class="relative overflow-x-auto">
+
+        <h1 class="text-3xl font-bold text-gray-200">Basic Table</h1>
+
+        <!-- table start -->
+        <table class="w-full text-sm text-left text-gray-500 dark:text-gray-400">
+          <thead class="text-xs text-gray-200 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-00">
+            <tr>
+              <th scope="col" class="px-6 py-3">No</th>
+              <th scope="col" class="px-6 py-3">Nama Lengkap</th>
+              <th scope="col" class="px-6 py-3">Email</th>
+              <th scope="col" class="px-6 py-3">Social Media</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+              <td scope="row" class="px-6 py-4 text-gray-900 whitespace-nowrap dark:text-white">1</td>
+              <td class="px-6 py-4 text-gray-900 whitespace-nowrap dark:text-white">Maikel Kayame</td>
+              <td class="px-6 py-4 font-thin">maikel@sacode.web.id</td>
+              <td class="px-6 py-4 font-thin flex justify-between gap-2">
+                <a href="https://github.com/maikelkayame" target="_blank" class="border border-gray-500 rounded px-2 py-1 inline-flex hover:border-gray-500 hover:text-gray-200">
+                  <i class="fa-brands fa-github"></i>
+                </a>
+                <a href="https://instagram.com/maikelkayame" target="_blank" class="border border-gray-500 rounded px-2 py-1 inline-flex hover:border-gray-500 hover:text-gray-200">
+                  <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="https://twitter.com/maikelkayame" target="_blank" class="border border-gray-500 rounded px-2 py-1 inline-flex hover:border-gray-500 hover:text-gray-200">
+                  <i class="fa-brands fa-x-twitter"></i>
+                </a>
+              </td>
+            </tr>
+            <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+              <td scope="row" class="px-6 py-4 text-gray-900 whitespace-nowrap dark:text-white">2</td>
+              <td class="px-6 py-4 text-gray-900 whitespace-nowrap dark:text-white">Billy Rumbiak</td>
+              <td class="px-6 py-4 font-thin">billy@sacode.web.id</td>
+              <td class="px-6 py-4 font-thin flex justify-between gap-2">
+                <a href="https://github.com/billyrumbiak" target="_blank" class="border border-gray-500 rounded px-2 py-1 inline-flex hover:border-gray-500 hover:text-gray-200">
+                  <i class="fa-brands fa-github"></i>
+                </a>
+                <a href="https://instagram.com/billyrumbiak" target="_blank" class="border border-gray-500 rounded px-2 py-1 inline-flex hover:border-gray-500 hover:text-gray-200">
+                  <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="https://twitter.com/billyrumbiak" target="_blank" class="border border-gray-500 rounded px-2 py-1 inline-flex hover:border-gray-500 hover:text-gray-200">
+                  <i class="fa-brands fa-x-twitter"></i>
+                </a>
+              </td>
+            </tr>
+            <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+              <td scope="row" class="px-6 py-4 text-gray-900 whitespace-nowrap dark:text-white">3</td>
+              <td class="px-6 py-4 text-gray-900 whitespace-nowrap dark:text-white">Janzen Faidiban</td>
+              <td class="px-6 py-4 font-thin">janzen@sacode.web.id</td>
+              <td class="px-6 py-4 font-thin flex justify-between gap-2">
+                <a href="https://github.com/janzenfaidiban" target="_blank" class="border border-gray-500 rounded px-2 py-1 inline-flex hover:border-gray-500 hover:text-gray-200">
+                  <i class="fa-brands fa-github"></i>
+                </a>
+                <a href="https://instagram.com/janzenfaidiban" target="_blank" class="border border-gray-500 rounded px-2 py-1 inline-flex hover:border-gray-500 hover:text-gray-200">
+                  <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="https://twitter.com/janzenfaidiban" target="_blank" class="border border-gray-500 rounded px-2 py-1 inline-flex hover:border-gray-500 hover:text-gray-200">
+                  <i class="fa-brands fa-x-twitter"></i>
+                </a>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <!-- table end -->
+
+      </div>
+
+
+
+
+
+
+
+      <!-- table with profile picture -->
+
+      <div class="relative overflow-x-auto">
+
+        <h1 class="text-3xl font-bold text-gray-200">Table With Images</h1>
+
+        <!-- table start -->
+        <table class="w-full text-sm text-left text-gray-500 dark:text-gray-400">
+          <thead class="text-xs text-gray-200 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-00">
+            <tr>
+              <th scope="col" class="px-6 py-3">No</th>
+              <th scope="col" class="px-6 py-3">Nama Lengkap</th>
+              <th scope="col" class="px-6 py-3">Email</th>
+              <th scope="col" class="px-6 py-3">Social Media</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+              <td scope="row" class="px-6 py-4 text-gray-900 whitespace-nowrap dark:text-white">1</td>
+              <td class="px-6 py-4 text-gray-900 whitespace-nowrap dark:text-white flex gap-2 items-center">
+                <img src="https://avatars.githubusercontent.com/u/102007716?v=4" alt="github profile picture" class="w-10 rounded-full">
+                <span>
+                  Maikel Kayame
+                </span>
+              </td>
+              <td class="px-6 py-4 font-thin">maikel@sacode.web.id</td>
+              <td class="px-6 py-4 font-thin flex justify-between gap-2">
+                <a href="https://github.com/maikelkayame" target="_blank" class="border border-gray-500 rounded px-2 py-1 inline-flex hover:border-gray-500 hover:text-gray-200">
+                  <i class="fa-brands fa-github"></i>
+                </a>
+                <a href="https://instagram.com/maikelkayame" target="_blank" class="border border-gray-500 rounded px-2 py-1 inline-flex hover:border-gray-500 hover:text-gray-200">
+                  <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="https://twitter.com/maikelkayame" target="_blank" class="border border-gray-500 rounded px-2 py-1 inline-flex hover:border-gray-500 hover:text-gray-200">
+                  <i class="fa-brands fa-x-twitter"></i>
+                </a>
+              </td>
+            </tr>
+            <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+              <td scope="row" class="px-6 py-4 text-gray-900 whitespace-nowrap dark:text-white">2</td>
+              <td class="px-6 py-4 text-gray-900 whitespace-nowrap dark:text-white flex gap-2 items-center">
+                <img src="https://avatars.githubusercontent.com/u/98867393?v=4" alt="github profile picture" class="w-10 rounded-full">
+                <span>
+                  Billy Rumbiak
+                </span>
+              </td>
+              <td class="px-6 py-4 font-thin">billy@sacode.web.id</td>
+              <td class="px-6 py-4 font-thin flex justify-between gap-2">
+                <a href="https://github.com/billyrumbiak" target="_blank" class="border border-gray-500 rounded px-2 py-1 inline-flex hover:border-gray-500 hover:text-gray-200">
+                  <i class="fa-brands fa-github"></i>
+                </a>
+                <a href="https://instagram.com/billyrumbiak" target="_blank" class="border border-gray-500 rounded px-2 py-1 inline-flex hover:border-gray-500 hover:text-gray-200">
+                  <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="https://twitter.com/billyrumbiak" target="_blank" class="border border-gray-500 rounded px-2 py-1 inline-flex hover:border-gray-500 hover:text-gray-200">
+                  <i class="fa-brands fa-x-twitter"></i>
+                </a>
+              </td>
+            </tr>
+            <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+              <td scope="row" class="px-6 py-4 text-gray-900 whitespace-nowrap dark:text-white">3</td>
+              <td class="px-6 py-4 text-gray-900 whitespace-nowrap dark:text-white flex gap-2 items-center">
+                <img src="https://avatars.githubusercontent.com/u/45115034?v=4" alt="github profile picture" class="w-10 rounded-full">
+                <span>
+                  Janzen Faidiban
+                </span>
+              </td>
+              <td class="px-6 py-4 font-thin">janzen@sacode.web.id</td>
+              <td class="px-6 py-4 font-thin flex justify-between gap-2">
+                <a href="https://github.com/janzenfaidiban" target="_blank" class="border border-gray-500 rounded px-2 py-1 inline-flex hover:border-gray-500 hover:text-gray-200">
+                  <i class="fa-brands fa-github"></i>
+                </a>
+                <a href="https://instagram.com/janzenfaidiban" target="_blank" class="border border-gray-500 rounded px-2 py-1 inline-flex hover:border-gray-500 hover:text-gray-200">
+                  <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="https://twitter.com/janzenfaidiban" target="_blank" class="border border-gray-500 rounded px-2 py-1 inline-flex hover:border-gray-500 hover:text-gray-200">
+                  <i class="fa-brands fa-x-twitter"></i>
+                </a>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <!-- table end -->
+
+      </div>
+
+
+
+
 
       <!-- footer start -->
       <footer class="absolute inset-x-0 bottom-0 h-16 text-center">
